@@ -42,11 +42,43 @@ This will place the clup binary in `~/.local/bin`. Make sure this directory is i
 
 ## From GitHub Releases
 
-You can download the pre-compiled binary for your operating system and architecture from the Releases page.
+You can download the latest pre-compiled binary for your operating system.
+
+```bash
+# macOS (Apple Silicon / arm64)
+
+curl -L -o ch https://github.com/robinarz/ch/releases/latest/download/ch-darwin-arm64
+chmod +x ch
+sudo mv ch $HOME/.local/bin/
+```
+
+```bash
+# macOS (Intel / amd64)
+
+curl -L -o ch https://github.com/robinarz/ch/releases/latest/download/ch-darwin-amd64
+chmod +x ch
+sudo mv ch $HOME/.local/bin/
+```
+
+```bash
+# Linux (amd64)
+
+curl -L -o ch https://github.com/robinarz/ch/releases/latest/download/ch-linux-amd64
+chmod +x ch
+sudo mv ch $HOME/.local/bin/
+```
 
 ## Configuration
 
-Before you can use clup, you need to create a .env file in the same directory as the binary (or in the project root if you're building from source).
+Before you can use clup, you need to create a `.clup.env` file in your home directory and source it in your shell.
+
+For example, if you're using zsh, you can add the following line to your `.zshrc` file:
+
+```bash
+source ~/.clup.env
+```
+
+The `.clup.env` file should contain the following environment variables:
 
 ```env
 CLICKUP_API_TOKEN="pk_12345678_..."
