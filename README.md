@@ -47,25 +47,25 @@ You can download the latest pre-compiled binary for your operating system.
 ```bash
 # macOS (Apple Silicon / arm64)
 
-curl -L -o ch https://github.com/robinarz/ch/releases/latest/download/ch-darwin-arm64
-chmod +x ch
-sudo mv ch $HOME/.local/bin/
+curl -L -o clup https://github.com/robinarz/clup/releases/latest/download/clup-darwin-arm64
+chmod +x clup
+sudo mv clup $HOME/.local/bin/
 ```
 
 ```bash
 # macOS (Intel / amd64)
 
-curl -L -o ch https://github.com/robinarz/ch/releases/latest/download/ch-darwin-amd64
-chmod +x ch
-sudo mv ch $HOME/.local/bin/
+curl -L -o clup https://github.com/robinarz/clup/releases/latest/download/clup-darwin-amd64
+chmod +x clup
+sudo mv clup $HOME/.local/bin/
 ```
 
 ```bash
 # Linux (amd64)
 
-curl -L -o ch https://github.com/robinarz/ch/releases/latest/download/ch-linux-amd64
-chmod +x ch
-sudo mv ch $HOME/.local/bin/
+curl -L -o clup https://github.com/robinarz/clup/releases/latest/download/clup-linux-amd64
+chmod +x clup
+sudo mv clup $HOME/.local/bin/
 ```
 
 ## Configuration
